@@ -140,20 +140,7 @@ for regressor_name, (regressor, params) in regressors.items():
     plt.rcParams["figure.figsize"] = (20,8)
     plt.bar(regressor_name,accuracy)
 
-import os
-import sys
-import pickle
 
-projectabspathname = os.path.abspath('insurance.pickle')
-print(projectabspathname)
-projectname = 'insurance.ipynb'
-projectpickle = open(str(projectabspathname),'wb')
-pickle.dump(projectname, projectpickle)
-projectpickle.close()
-
-from joblib import dump, load
-
-# Save the model
 dump(model, 'insurance.joblib')
 
 # Load the model
