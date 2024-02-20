@@ -11,8 +11,12 @@ Evaluating the performance of each model using R-squared score and F1 score.
 # Requirements
 Python 3.x
 Libraries: pandas, numpy, scikit-learn, xgboost, matplotlib
+
 # Best Accuracy
 Linear Regression: 78%
+
 Decision Tree Regression: 85%
+
 Random Forest Regression: 87%
+
 XGBoost Regression: 88%
